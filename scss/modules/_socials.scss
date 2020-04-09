@@ -1,0 +1,21 @@
+.socials {
+  display: flex;
+  justify-content: center;
+
+  .social:not(:last-child) {
+    margin-right: 0.75em;
+  }
+
+  .social-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.25em;
+    height: 2.25em;
+
+    font-size: 1.4rem;
+
+    border: 0.1rem solid #ffffff;
+    border-radius: 50%;
+  }
+}

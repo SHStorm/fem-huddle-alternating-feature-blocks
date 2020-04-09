@@ -1,0 +1,17 @@
+.l-container {
+  max-width: 37.5rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+
+  &-narrower {
+    padding: 0 2rem;
+  }
+
+  &-narrow {
+    padding: 0 3.7rem;
+  }
+
+  &-wider {
+    padding: 0 1.2rem;
+  }
+}

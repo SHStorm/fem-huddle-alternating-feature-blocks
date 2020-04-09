@@ -1,0 +1,7 @@
+.nav {
+  font-size: 1.8rem;
+
+  &-item:not(:last-child) {
+    margin-bottom: 0.9em;
+  }
+}

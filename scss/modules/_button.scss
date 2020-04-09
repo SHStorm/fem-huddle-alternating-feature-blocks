@@ -1,0 +1,30 @@
+.button {
+  display: inline-block;
+  padding: 0.95em 4.95em;
+
+  color: #ffffff;
+
+  border: none;
+  border-radius: 100em;
+
+  background-color: #ff52bf;
+  box-shadow: 0 0 0.5em #ebfbff;
+
+  &-secondary {
+    padding: 0.5em 2.25em;
+
+    color: #00252e;
+    font-size: 1rem;
+
+    background-color: #ffffff;
+    box-shadow: 0 0.15em 0.5em rgba(0, 0, 0, 0.2);
+  }
+
+  &-small {
+    padding: 1.3em 4.9em;
+
+    font-size: 1rem;
+
+    box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.1);
+  }
+}

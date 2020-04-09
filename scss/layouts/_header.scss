@@ -1,0 +1,16 @@
+$v-padding: 2.4rem;
+
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  .l-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: $v-padding;
+    padding-bottom: $v-padding;
+  }
+}
