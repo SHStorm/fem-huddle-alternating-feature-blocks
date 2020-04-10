@@ -1,4 +1,10 @@
+@use '../mixins';
+
 .lead {
   color: #00252e;
   font-size: 1.6rem;
+
+  @include mixins.respond {
+    font-size: 1.8rem;
+  }
 }

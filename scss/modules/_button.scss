@@ -1,3 +1,5 @@
+@use '../mixins';
+
 .button {
   display: inline-block;
   padding: 0.95em 4.95em;
@@ -17,7 +19,7 @@
     font-size: 1rem;
 
     background-color: #ffffff;
-    box-shadow: 0 0.15em 0.5em rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.15em 0.5em rgba(0, 0, 0, 0.1);
   }
 
   &-small {
@@ -26,5 +28,21 @@
     font-size: 1rem;
 
     box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.1);
+  }
+
+  @include mixins.respond {
+    padding: 1.3em 5em;
+
+    font-size: 1.4rem;
+
+    &-secondary {
+      padding: 0.9em 4.6em 1.2em;
+
+      font-size: 1.4rem;
+    }
+
+    &-small {
+      font-size: 2rem;
+    }
   }
 }

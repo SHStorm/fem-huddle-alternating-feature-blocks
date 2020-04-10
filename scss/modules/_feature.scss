@@ -1,3 +1,5 @@
+@use '../mixins';
+
 .feature {
   padding: 4em 3.2em 2.4em;
 
@@ -10,16 +12,14 @@
   &-img {
     padding: 0 0.75em;
     margin-bottom: 3.6em;
+    width: 100%;
+    max-width: 25em;
   }
 
   &-title {
     margin-bottom: 0.75em;
 
     font-size: 2rem;
-  }
-
-  &-desc {
-
   }
 
   &:first-child {
@@ -39,6 +39,43 @@
     .feature-img {
       padding: 0 0;
       margin-bottom: 4.2em;
+    }
+  }
+
+  @include mixins.respond {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    height: 24.444em;
+
+    text-align: left;
+
+    border-radius: 0.75em;
+
+    &:nth-child(2n) {
+      flex-direction: row;
+    }
+
+    &:nth-child(n) {
+      padding: 0 1.8em 0 6.7em;
+
+      .feature-img {
+        padding: 0;
+        margin: 0;
+        width: 37.6%;
+      }
+    }
+
+    &-body {
+      margin-top: 0.5em;
+      width: 46%;
+    }
+
+    &-title {
+      margin-bottom: 0.5em;
+
+      font-size: 2.8rem;
     }
   }
 }

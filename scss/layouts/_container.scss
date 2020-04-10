@@ -1,5 +1,7 @@
+@use '../mixins';
+
 .l-container {
-  max-width: 37.5rem;
+  max-width: 60rem;
   margin: 0 auto;
   padding: 0 1.6rem;
 
@@ -13,5 +15,10 @@
 
   &-wider {
     padding: 0 1.2rem;
+  }
+
+  @include mixins.respond {
+    max-width: 144rem;
+    padding: 0 8rem;
   }
 }

@@ -1,7 +1,19 @@
+@use '../mixins';
+
 .nav {
   font-size: 1.8rem;
 
   &-item:not(:last-child) {
     margin-bottom: 0.9em;
+  }
+
+  @include mixins.respond {
+    &-list {
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      grid-template-columns: repeat(2, auto);
+      grid-auto-flow: column;
+      grid-column-gap: 6.8em;
+    }
   }
 }

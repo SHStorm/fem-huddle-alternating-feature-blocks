@@ -1,3 +1,5 @@
+@use '../mixins';
+
 .copy {
   display: block;
 
@@ -5,4 +7,10 @@
   text-align: center;
   letter-spacing: 0.05em;
   font-family: 'Poppins', sans-serif;
+
+  @include mixins.respond {
+    font-size: 1.2rem;
+    text-align: right;
+    letter-spacing: 0;
+  }
 }

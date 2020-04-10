@@ -1,8 +1,18 @@
+@use '../mixins';
+
 .logo {
   display: inline-flex;
   width: 7.43em;
 
   &-large {
     width: 10.45em;
+  }
+
+  @include mixins.respond {
+    width: 11.1em;
+
+    &-large {
+      width: 15em;
+    }
   }
 }

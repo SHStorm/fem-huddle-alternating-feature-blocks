@@ -1,0 +1,5 @@
+@mixin respond {
+  @media (min-width: 75rem) {
+    @content;
+  }
+}

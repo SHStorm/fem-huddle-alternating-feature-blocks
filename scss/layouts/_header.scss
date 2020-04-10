@@ -1,3 +1,5 @@
+@use '../mixins';
+
 $v-padding: 2.4rem;
 
 #header {
@@ -6,10 +8,18 @@ $v-padding: 2.4rem;
   left: 0;
   right: 0;
 
+  padding-top: $v-padding;
+  padding-bottom: $v-padding;
+
   .l-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @include mixins.respond {
+    $v-padding: 4.9rem;
+
     padding-top: $v-padding;
     padding-bottom: $v-padding;
   }

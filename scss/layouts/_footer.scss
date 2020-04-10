@@ -1,3 +1,5 @@
+@use '../mixins';
+
 #footer {
   padding: 14rem 0 4rem;
 
@@ -20,5 +22,33 @@
 
   .socials {
     margin-bottom: 2.5rem;
+  }
+
+  @include mixins.respond {
+    padding-top: 19rem;
+    padding-left: 4rem;
+    padding-bottom: 6.4rem;
+
+    .logo {
+      margin-bottom: 4rem;
+    }
+
+    .l-footer-body {
+      display: flex;
+      margin-bottom: 4rem;
+    }
+
+    .contact-info, .nav, .socials {
+      margin-bottom: 0;
+    }
+
+    .contact-info {
+      margin-right: 10.8%;
+    }
+
+    .socials {
+      flex: 1 1;
+      margin-left: 1.2rem;
+    }
   }
 }

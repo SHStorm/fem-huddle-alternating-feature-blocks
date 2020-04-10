@@ -1,7 +1,13 @@
+@use '../mixins';
+
 #features {
   padding: 5.8rem 0 5.3rem;
 
   .feature:not(:last-child) {
     margin-bottom: 4rem;
+  }
+
+  @include mixins.respond {
+    padding: 16rem 2.4rem 6.4rem;
   }
 }

@@ -1,6 +1,9 @@
+@use '../mixins';
+
 .cta-card {
   display: block;
   padding: 3.1em 0.5em 2.9em;
+  max-width: 44.5em;
 
   text-align: center;
 
@@ -10,8 +13,18 @@
   box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.1);
 
   &-title {
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.333em;
 
     font-size: 1.8rem;
+  }
+
+  @include mixins.respond {
+    padding-top: 3.6em;
+
+    &-title {
+      margin-bottom: 1.2em;
+
+      font-size: 3.2rem;
+    }
   }
 }
